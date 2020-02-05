@@ -18,6 +18,6 @@ services:
     container_name: taskapp-mongodb
     ports:
       - 27017:27017
-    command: mongod --smallfiles --logpath=/dev/null # --quiet
+    command: mongod --logpath=/dev/null # --quiet
     volumes:
       - ~/data:/data/db
